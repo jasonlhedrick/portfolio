@@ -5,12 +5,11 @@
 
 *, ::before, ::after {
   box-sizing: border-box;
-  margin: 0;
 }
 
 body {
   background-color: var(--defaultBGColor);
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Lora", serif;
 }
 
@@ -23,12 +22,40 @@ header h1 {
   margin: 2.5% 0 2.5% 0;
 }
 
-.main-menu {
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-menu {
   font-size: 1.3rem;
   font-weight: 600;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
+}
+
+a:hover {
+  transition: all 10ms ease-in-out;
+  color: green;
+}
+
+#about {
+  padding: 5px;
+  margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+
+  #main-menu {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
