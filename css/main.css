@@ -7,10 +7,65 @@
   box-sizing: border-box;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  justify-content: space-between;
+}
+
+#cube-header {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.cube1 {
+  background-color: white;
+  min-width: 150px;
+  min-height: 150px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 0 0 100% 0;
+}
+
+.cube2 {
+  background-color: white;
+  min-width: 150px;
+  min-height: 150px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 0 0 0 100%;
+}
+
+.cube3 {
+  background-color: white;
+  min-width: 150px;
+  min-height: 150px;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-radius: 0 100% 0 0;
+}
+
+.cube4 {
+  background-color: white;
+  min-width: 150px;
+  min-height: 150px;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-radius: 100% 0 0 0;
+}
+
 body {
   background-color: var(--defaultBGColor);
   font-size: 1rem;
   font-family: "Lora", serif;
+  margin: 0;
+}
+
+img {
+  width: 100%;
 }
 
 header {
@@ -30,6 +85,10 @@ main {
 
 .border-thick {
   border: solid 4px black;
+}
+
+.border-round {
+  border-radius: 25px;
 }
 
 .margin-medium {
@@ -65,7 +124,7 @@ a:hover {
 
 #projects {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 5px;
   margin: 15px;
 }
@@ -73,6 +132,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#project-container {
+  box-shadow: 0px 0px 5px 2px #757575;
+}
+
+#project-container:hover {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 5px 2px green;
 }
 
 #contact-form {
@@ -83,7 +151,19 @@ a:hover {
 #about {
   padding: 5px;
   margin: 15px;
-  width: 60ch;
+}
+
+#skills {
+  padding: 5px;
+  margin: 15px;
+}
+
+#about-skills-container {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -93,6 +173,28 @@ a:hover {
 
   #main-menu {
     flex-direction: row;
+  }
+
+  #projects {
+    flex-direction: row;
+  }
+
+  #about-skills-container {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  #about {
+    width: 50ch;
+  }
+
+  #skills {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  img {
+    width: auto;
   }
 }
 

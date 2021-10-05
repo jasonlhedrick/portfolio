@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-        <header>
-            <h1>Jason Hedrick's Portfolio</h1>
+        <header id="cube-header">
+            <div class="cube1">
+            </div>
             <nav id="main-menu">
                 <a href="index.html">Home</a>
                 <a href="https://blog.jasonlhedrick.com/">My Blog</a>
@@ -17,12 +18,17 @@
                 <a href="https://twitter.com/JasonLHedrick1">Twitter</a>
                 <a href="contact.html">Contact Me</a>
             </nav>
+            <div class="cube2">
+            </div>
+        </header>
+        <header>
+            <h1>Jason Hedrick's Portfolio</h1>
         </header>
         <main>
             <h3>My Projects</h3>
             <section id="projects">
-                <div class="border-thick margin-medium">
-                    <a href="https://stoic-goldberg-648df7.netlify.app/">
+                <div id="project-container" class="border-thick border-round margin-medium">
+                    <a href="https://stoic-goldberg-648df7.netlify.app/" target="_blank">
                         <figure class="project-figure">
                             <figcaption id="noterific-caption">Noterific!</figcaption>
                             <img src="/img/noterific.png" alt="Image of my Noterific! app on the Note List page." class="outline-thin margin-medium image-link"/>
@@ -30,8 +36,8 @@
                     </a>
                     <p class="text-center">React, SASS, Node, Express, PostgreSQL</p>
                 </div>
-                <div class="border-thick margin-medium">
-                    <a href="https://jasonlhedrick.github.io/countdown-timer/">
+                <div id="project-container" class="border-thick border-round margin-medium">
+                    <a href="https://jasonlhedrick.github.io/countdown-timer/" target="_blank">
                         <figure class="project-figure">
                             <figcaption id="countdown-caption">Countdown Timer</figcaption>
                             <img src="/img/countdown-timer.png" alt="Picture of my Countdown Timer app" class="outline-thin margin-medium image-link"/>
@@ -40,21 +46,35 @@
                     <p class="text-center">HTML, CSS, JavaScript</p>
                 </div>
             </section>
-            <section id="about">
-                Hello, My name is Jason Hedrick.
-                I am an open and warm person that strives to simply do my best as a husband and father and continually improve my skills and abilities. 
-            </section>
-            <section id="skills">
-                <h3>My Skills</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node</li>
-                    <li>PostgreSQL</li>
-                </ul>
-            </section>
+            <div id="about-skills-container">
+                <section id="about">
+                    <h4>Hello, My name is Jason Hedrick.</h4>
+                    <p>
+                    I'm a majority self taught developer with a strong understanding of the fundamentals of programming.
+                    Most of my experience is based around a core of HTML, CSS, JavaScript, React, Node.js, Express and PostgreSQL.
+                    </p>
+                    <p>
+                    I view libraries and frameworks as simply tools and focus more on the ability to learn any API or 
+                    tool quickly through reading documentation and practicing examples.
+                    </p>
+                </section>
+                <section id="skills">
+                    <h3>My Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SCSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </section>
+            </div>
         </main>
+        <footer>
+            <div class="cube3"></div>
+            <div class="cube4"></div>
+        </footer>
     </body>
 </html>
